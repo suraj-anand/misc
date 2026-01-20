@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Java",
+            "type": "shell",
+            "command": "mkdir -p /tmp/java-bin && javac -d /tmp/java-bin ${file} && java -cp /tmp/java-bin ${fileBasenameNoExtension} && rm -rf /tmp/java-bin",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
